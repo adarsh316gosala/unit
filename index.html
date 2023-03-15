@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    #main{
+          display: flex;
+          list-style: none;
+          color: red;
+    }
+    .a{
+        margin: 20px;
+        font-size: 30px;
+        
+        
+    }
+    .b{
+        margin: 20px;
+        
+        font-size: 30px;
+        list-style: none;
+        color: rgb(227, 137, 19);
+        text-shadow: 2px 2px 2px black;
+        width: 200px;
+        height: 30px;
+       position: relative;
+       right: 50px;
+      
+      display: none;
+    }
+    #mainlist:hover .b{
+    display: block;
+
+   }
+   .b:hover{
+    color: aqua;
+   }
+
+   </style>
+</head>
+<body>
+    <div>
+        <ul id="main">
+           <a href="home.html"> <li class="a">Home</li></a>
+           <a href="contact.html"> <li class="a">Contact</li></a>
+            <li class="a" id="mainlist">Services
+            <ul id="submain">
+                <li class="b">FoodDelivary</li>
+                <li class="b">FoodPacking</li>
+                <li class="b">FoodDonating</li>
+            </li>
+            </ul>
+            <a href="logout.html"><li class="a">Logout</li></a>
+        </ul>
+    </div>
+</body>
+</html>
